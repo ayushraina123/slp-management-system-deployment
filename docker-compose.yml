@@ -32,7 +32,7 @@ services:
       start_period: 30s
 
   devotee-service:
-    image: ayushraina1208/slp-devotee-service:2.0
+    image: ayushraina1208/slp-devotee-service:3.0
     container_name: slp-devotee-service
     volumes:
     - "./exports:/app/exports"
@@ -67,7 +67,7 @@ services:
       - "8080:8080"
 
   frontend:
-    image: ayushraina1208/slp-frontend:1.0
+    image: ayushraina1208/slp-frontend:2.0
     container_name: slp-frontend
     depends_on:
       - api-gateway
